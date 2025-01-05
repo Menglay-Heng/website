@@ -1,4 +1,3 @@
-// Sample certificates data
 const certificates = [
     {
         title: "Java Spring Framework 5 - Build A Web App Step By Step",
