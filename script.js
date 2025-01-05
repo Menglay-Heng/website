@@ -6,7 +6,7 @@ const certificates = [
         date: "30th September, 2024",
         image: "images/certificates/certificate1.jpg",
         description: "Full Stack Web Development certification covering HTML, CSS, JavaScript, and modern frameworks.",
-        certificateUrl: "https://www.example.com/cert1"
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-22GW98HS?v=1736053097"
     },
     {
         title: "Docker ",
@@ -14,7 +14,7 @@ const certificates = [
         date: "30th September, 2024",
         image: "images/certificates/certificate1.jpg",
         description: "Full Stack Web Development certification covering HTML, CSS, JavaScript, and modern frameworks.",
-        certificateUrl: "https://www.example.com/cert1"
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-22GW98HS?v=1736053097"
     },
     {
         title: "Java Spring boot ",
@@ -22,7 +22,7 @@ const certificates = [
         date: "30th September, 2024",
         image: "images/certificates/certificate1.jpg",
         description: "Full Stack Web Development certification covering HTML, CSS, JavaScript, and modern frameworks.",
-        certificateUrl: "https://www.example.com/cert1"
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-22GW98HS?v=1736053097"
     },
     {
         title: "Java Spring Framework 5 - Build A Web App Step By Step",
