@@ -1,52 +1,75 @@
 const certificates = [
+    
     {
-        title: "Java Spring Framework 5 - Build A Web App Step By Step",
-        issuer: "Example Academy",
+        title: "Java Certification 2024",
+        issuer: "Tutorialspoint",
         date: "30th September, 2024",
         image: "images/certificates/certificate1.jpg",
-        description: "Full Stack Web Development certification covering HTML, CSS, JavaScript, and modern frameworks.",
-        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-22GW98HS?v=1736053097"
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-QBH3DBQ0"
     },
     {
-        title: "Docker ",
-        issuer: "Example Academy",
+        title: "Java Spring Framework 5",
+        issuer: "Damian Jedrzejak",
         date: "30th September, 2024",
-        image: "images/certificates/certificate1.jpg",
-        description: "Full Stack Web Development certification covering HTML, CSS, JavaScript, and modern frameworks.",
-        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-22GW98HS?v=1736053097"
+        image: "images/certificates/certificate2.png",
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-22GW98HS"
     },
     {
-        title: "Java Spring boot ",
-        issuer: "Example Academy",
-        date: "30th September, 2024",
-        image: "images/certificates/certificate1.jpg",
-        description: "Full Stack Web Development certification covering HTML, CSS, JavaScript, and modern frameworks.",
-        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-22GW98HS?v=1736053097"
+        title: "Functional Programming and Lambda",
+        issuer: "Arun Ammasai",
+        date: "12th September, 2024",
+        image: "images/certificates/certificate3.png",
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-M2SNONVC"
     },
     {
-        title: "Java Spring Framework 5 - Build A Web App Step By Step",
-        issuer: "Example Academy",
-        date: "30th September, 2024",
-        image: "images/certificates/certificate1.jpg",
-        description: "Full Stack Web Development certification covering HTML, CSS, JavaScript, and modern frameworks.",
-        certificateUrl: "https://www.example.com/cert1"
+        title: "Create Chatting App Using Android Studio and Java",
+        issuer: "Mustafa Alawi",
+        date: "24th July, 2024",
+        image: "images/certificates/certificate4.png",
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-35XLUDYD"
     },
     {
-        title: "Advanced JavaScript Development",
-        issuer: "Tech Institute",
-        date: "15th August, 2024",
-        image: "images/certificates/certificate2.jpg",
-        description: "Advanced JavaScript concepts including ES6+, async programming, and modern frameworks.",
-        certificateUrl: "https://www.example.com/cert2"
+        title: "JSP and Servlets",
+        issuer: "TELCOMA Global",
+        date: "22nd July, 2024",
+        image: "images/certificates/certificate5.png",
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-1K9IFTRV"
     },
     {
-        title: "React Development Specialist",
-        issuer: "Web Academy",
-        date: "1st July, 2024",
-        image: "images/certificates/certificate3.jpg",
-        description: "Comprehensive React.js development including hooks, context API, and Redux.",
-        certificateUrl: "https://www.example.com/cert3"
-    }
+        title: "Java Database Connectivity (JDBC)",
+        issuer: "Emenwa Global, Ejike IfeanyiChukwu",
+        date: "12th June, 2024",
+        image: "images/certificates/certificate6.png",
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-95G4QLJJ"
+    },
+    {
+        title: "Java Concurrency & Multithreading",
+        issuer: "Denis Tishkov",
+        date: "8th June, 2024",
+        image: "images/certificates/certificate7.png",
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-DZ5B7L4F"
+    },
+    {
+        title: "Fundamentals Of Object-Oriented Programming",
+        issuer: "Doxa Anthony",
+        date: "21st April, 2024",
+        image: "images/certificates/certificate8.png",
+        certificateUrl: "https://www.tutorialspoint.com/market/certificate.jsp/TP-BEZJ8PLI"
+    },
+    {
+        title: "Learn Spring Boot 3 in 100 Steps",
+        issuer: "In 28 Minutes",
+        date: "31st july, 2024",
+        image: "images/certificates/certificate9.png",
+        certificateUrl: "https://www.udemy.com/certificate/UC-66724011-62e0-4b3d-8f71-89f6f2d4a985"
+    },
+    {
+        title: "Mastering Chatbots with Botpress",
+        issuer: "Abu Bakr Soliman",
+        date: "24st sep, 2024",
+        image: "images/certificates/certificate10.png",
+        certificateUrl: "https://www.udemy.com/certificate/UC-23e381f6-e907-4007-9d82-b3c5cfc2e89a/"
+    },
     // Add more certificates as needed
 ];
 
@@ -64,7 +87,7 @@ function createCertificateCards() {
                 <h3>${cert.title}</h3>
                 <p><strong>Issuer:</strong> ${cert.issuer}</p>
                 <p><strong>Date:</strong> ${cert.date}</p>
-                <p>${cert.description}</p>
+               <!-- <p>${cert.description}</p> --> 
                 <button class="view-certificate" onclick="window.open('${cert.certificateUrl}', '_blank')">
                     View Certificate
                 </button>
