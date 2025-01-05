@@ -1,0 +1,215 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 100px; /* Increased padding to account for fixed header */
+    background-color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px 20px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    flex-grow: 1;
+}
+
+.header-text h1 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.header-text p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.profile-image {
+    margin-left: 20px;
+}
+
+.profile-image img {
+    width: 60px; /* Reduced size */
+    height: 60px; /* Reduced size */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.certificates-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Certificate Grid and Cards */
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.certificate-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    flex-shrink: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.certificate-card h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.certificate-card p {
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.view-certificate {
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .certificate-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* Adjusted for smaller header */
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-image img {
+        width: 50px; /* Smaller on mobile */
+        height: 50px;
+    }
+
+    .certificate-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 90px; /* Adjusted for stacked header content */
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 10px 0 0 0;
+    }
+
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .header-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Hover effects */
+@media (hover: hover) {
+    .certificate-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .view-certificate:hover {
+        background-color: #0056b3;
+    }
+}
